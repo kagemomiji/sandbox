@@ -11,8 +11,9 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see.
+    validations:
+      required: true
   
   - type: textarea
     id: steps-to-reproduce
@@ -66,19 +67,14 @@ body:
     id: proxy-server
     attributes:
       label: Proxy Server
-      description: if running Airsonic behind a proxy
+      description: if running Airsonic behind a proxy, what server and version? Otherwise, None
     validations:
       required: false
-  - type: dropdown
-    id: browsers
+  - type: input
+    id: client
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      label: client detail
+      description: What browsers or applicationis are you seeing the problem on?
   - type: dropdown
     id: language
     attributes:
