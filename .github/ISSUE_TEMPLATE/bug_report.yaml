@@ -82,6 +82,14 @@ body:
     attributes:
       label: DB Detail
       description: If you choose `Other`, please input your DB information.
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Configuration paramter
+      description: Pleasse copy and paset your configuration. **Don't write your secret parameter!** 
+    validations:
+      required: true
+      
   - type: input
     id: proxy-server
     attributes:
@@ -135,9 +143,3 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: console
-  - type: textarea
-    id: configuration
-    attributes:
-      label: Configuration paramter
-      description: Pleasse copy and paset your configuration. **Don't write your secret parameter!** 
-      
