@@ -21,7 +21,7 @@ body:
         - "Apps"
         - "Advanced"
         - "Developer"
-        - "New Section"
+        - ":bulb:New Section"
     validations:
       required: true
 
